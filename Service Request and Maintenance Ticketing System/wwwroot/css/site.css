@@ -1,6 +1,6 @@
 :root {
-    --body-bg: #0f172a;
-    --navbar-bg-color: #060e22;
+    --body-bg: #023E8A;
+    --navbar-bg-color: #03045E;
     --text-color: #f8fafc;
 }
 
@@ -64,5 +64,5 @@ footer {
 
 .main-content {
     margin-left: 220px;
-    min-height: calc(100vh - 117px); /* 100vh minus navbar (57px) and footer (~60px) */
+    min-height: calc(100vh - 117px);
 }

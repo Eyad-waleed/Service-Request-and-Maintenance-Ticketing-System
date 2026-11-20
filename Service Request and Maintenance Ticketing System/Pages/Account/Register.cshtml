@@ -1,0 +1,46 @@
+﻿@page
+@model Service_Request_and_Maintenance_Ticketing_System.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="card bg-dark text-white border-secondary shadow-sm p-4">
+
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">Create account</h2>
+                    <p>Sign up to submit and track requests</p>
+                </div>
+
+                <form method="post">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" name="Email" placeholder="name@example.com" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="Password" placeholder="Create a password" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm password</label>
+                        <input type="password" class="form-control" id="confirmPassword" name="ConfirmPassword" placeholder="Re-enter your password" required />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                </form>
+
+                <hr class="my-4" />
+
+                <div class="text-center">
+                    <p class="mb-2">Already have an account?</p>
+                    <a asp-page="/Account/Login" class="btn btn-outline-light w-100">Log in</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
