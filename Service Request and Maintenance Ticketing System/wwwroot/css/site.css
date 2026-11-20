@@ -1,6 +1,6 @@
 :root {
-    --body-bg: #023E8A;
-    --navbar-bg-color: #03045E;
+    --body-bg: #012A4A;
+    --navbar-bg-color: #013A63;
     --text-color: #f8fafc;
 }
 
@@ -58,8 +58,9 @@ footer {
     position: fixed;
     top: 57px;
     left: 0px;
-    width: 220px;
+    width: 210px;
     height: 100vh;
+    background-color: var(--navbar-bg-color)
 }
 
 .main-content {
