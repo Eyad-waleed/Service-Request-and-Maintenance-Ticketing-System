@@ -1,0 +1,40 @@
+@page
+@model Service_Request_and_Maintenance_Ticketing_System.Pages.TicketCategoryPages.DeleteModel
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Service_Request_and_Maintenance_Ticketing_System.Model.TicketCategory</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TicketCategory.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TicketCategory.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TicketCategory.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TicketCategory.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TicketCategory.IsActive)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TicketCategory.IsActive)
+        </dd>
+    </dl>
+    <form method="post">
+        <input type="hidden" asp-for="TicketCategory.Id" />
+        <input type="submit"
+			   value="Delete"
+			   class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
